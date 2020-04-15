@@ -1,4 +1,5 @@
-FROM node:9-alpine
+#FROM node:9-alpine
+FROM arm32v7/node:9-alpine
 
 COPY . /src
 RUN cd /src && npm install
